@@ -1,0 +1,9 @@
+<h1>Jugadores de Futbol</h1>
+<% @players.each do |player| %>
+  <p><%= player["name"] %></p>
+  <p><%= player["team"] %></p>
+  <p><%= player["position"] %></p>
+  <p><%= player["number"] %></p>
+
+  <img src="<%= player["images_url"] %>" alt="">
+<% end %>
