@@ -1,2 +1,19 @@
-<h1>Players#new</h1>
-<p>Find me in app/views/players/new.html.erb</p>
+<h1>Jugadores</h1>
+
+
+<%# <form action="">
+  <label for="">name</label>
+  <input type="text">
+</form> %>
+
+<%= form_with url: players_path, method: :post do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :team %>
+  <%= f.text_field :team %>
+  <%= f.label :position %>
+  <%= f.text_field :position %>
+  <%= f.label :images_url %>
+  <%= f.text_field :images_url %>
+  <%= f.submit %>
+<% end %>
